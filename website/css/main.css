@@ -60,7 +60,7 @@ nav {
 	color: #a3bc7f;
 }
 
-.label { 
+#label { 
 	position: absolute;
 	right: 20px;
 	/*padding: 0 10px;*/
@@ -105,6 +105,7 @@ nav {
 }
 
 .icons-centered { 	
+	position: relative;
  	top: 50%;
  	transform: translateY(-50%);
  	-webkit-transform: translateY(-50%);
@@ -123,7 +124,7 @@ nav {
 /* Mobile (portrait) */
 @media only screen and (orientation: portrait) { 	
 	.icon { width: 24%;}
-	.label { display: none;}
+	#label { display: none;}
 	#info-block { padding-left: 10%; 
 				  padding-right: 10%;
 				  width: auto;}

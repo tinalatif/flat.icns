@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	// centers info-block if small, otherwise extends info page to be longer
 	if($("#info-block").height() < $("#info-container").height()) { 
 		$("#info-block").css("position", "relative");
 		$("#info-block").css("top", $("#info-container").height()/2);
@@ -7,6 +8,16 @@ $(document).ready(function() {
 	if($("#info-block").height() > $("#info-container").height()) { 
 		$("#info-container").css("height", $("#info-block").height());
 	}	
+
+	// label changing
+	$(".icon").mouseover(function() { 
+		$("#label").text($(this).attr('id') + ".icns");
+	});
+	$(".icon").mouseout(function() { 
+		$("#label").text("flat.icns");
+	});
+
+
 
 	var overflow = $(document.body).height() < $("#icon-container").height();
 
