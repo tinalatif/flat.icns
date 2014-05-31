@@ -77,7 +77,7 @@ nav {
 #info-block { 
 	display: table;
 	width: 600px;
-	padding-top: 20px;
+	padding-top: 40px;
 	padding-bottom: 30px;
 	margin: auto;
 }
@@ -115,6 +115,7 @@ nav {
 
 .icon { 
 	width: 11%;
+	cursor: pointer;
 }
 
 #hidden-icons { 
