@@ -69,7 +69,7 @@ nav {
 
 #info-container { 
 	width: 100%;
-	min-height: calc(100% - 50px);
+	/*min-height: calc(100% - 50px);*/
 	background-color: #333333;
 	color: #d8d8d8;
 }
@@ -88,29 +88,18 @@ nav {
 
 #icon-container { 
 	width: 100%;
-	/*height: calc(100% - 50px);*/
+	height: calc(100% - 50px);
 	padding-top: 50px;
 	background-color: #d8d8d8;
 }
 
 #icons { 
 	position: relative;
-
 	margin: auto;
 	text-align: center;
 	width: 80%;
-
 	padding-top: 30px;
 	padding-bottom: 30px;
-}
-
-.icons-centered { 	
-	position: relative;
- 	top: 50%;
- 	transform: translateY(-50%);
- 	-webkit-transform: translateY(-50%);
- 	-moz-transform: translateY(-50%);
- 	-ms-transform: translateY(-50%);
 }
 
 .icon { 
