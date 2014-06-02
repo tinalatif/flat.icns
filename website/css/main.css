@@ -100,10 +100,11 @@ nav {
 	width: 80%;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	font-size: 0px;
 }
 
 .icon { 
-	width: 11%;
+	width: 12%;
 	cursor: pointer;
 }
 
