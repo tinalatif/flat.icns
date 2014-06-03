@@ -93,13 +93,30 @@ nav {
 	background-color: #d8d8d8;
 }
 
+#icon-content { 
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+#title { 
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+#logo { 
+	font-size: 40px;
+}
+
+#summary { 
+	font-size: 20px;
+}
+
 #icons { 
 	position: relative;
 	margin: auto;
 	text-align: center;
 	width: 80%;
-	padding-top: 30px;
-	padding-bottom: 30px;
 	font-size: 0px;
 }
 

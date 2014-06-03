@@ -11,18 +11,18 @@ $(document).ready(function() {
 
 	// label changing
 	$(".icon").mouseover(function() { 
-		$("#label").text($(this).attr('id') + ".icns");
+		$("#label").text($(this).attr('id'));
 	});
 	$(".icon").mouseout(function() { 
-		$("#label").text("flat.icns");
+		$("#label").text("");
 	});
 
 	// icon section sizing
-	if($(document.body).height() < $("#icons").height()) { 
+	if($(document.body).height() < $("#icon-content").height() + 50) { 
 		$("#icon-container").css("height", "auto");
 	}		
-	var initialTopSpace = ($("#icon-container").height() - $("#icons").height())/2;
-	$("#icons").css("padding-top", initialTopSpace);
+	var initialTopSpace = ($("#icon-container").height() - $("#icon-content").height())/2;
+	$("#icon-content").css("padding-top", initialTopSpace);
 	
 	// expansion
 	$(".see-more-btn").click(function() { 
