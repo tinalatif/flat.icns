@@ -1,13 +1,27 @@
-$(document).ready(function() {
-	// centers info-block if small, otherwise extends info page to be longer
-	if($("#info-block").height() < $("#info-container").height()) { 
-		$("#info-block").css("position", "relative");
-		$("#info-block").css("top", $("#info-container").height()/2);
-		$("#info-block").css("transform", "translateY(-50%)");
+$(window).load(function() {
+
+	// icon overflow
+	var iconOverflow = $(document.body).height() < $("#icon-content").height() + 50 + 80;
+	var contentTopPadding;
+
+	if(!iconOverflow) { 
+		// expand icon-page to fill full screen
+		$("#icon-page").css("height", "calc(100% - 50px)");
+		
+		// center contents
+		var whiteSpace = $("#icon-page").height() - ($("#icon-content").height());
+		contentTopPadding = parseInt($("#icon-content").css("padding-top"), 10);
+		$("#icon-content").css("top", whiteSpace/3 - contentTopPadding);
+		$("#icon-table").css("padding-top", whiteSpace/3);
 	}
-	if($("#info-block").height() > $("#info-container").height()) { 
-		$("#info-container").css("height", $("#info-block").height());
-	}	
+
+	// info overflow
+	var infoOverflow = $(document.body).height() < $("#info-page").height() + 50;
+	if(!infoOverflow) { 
+		$("#info-page").css("height", "calc(100% - 50px)");
+		var whiteSpace = $("#info-page").height() - $("#info-content").height();
+		$("#info-content").css("top", whiteSpace/2);
+	}
 
 	// label changing
 	$(".icon").mouseover(function() { 
@@ -17,20 +31,15 @@ $(document).ready(function() {
 		$("#label").text("");
 	});
 
-	// icon section sizing
-	if($(document.body).height() < $("#icon-content").height() + 50) { 
-		$("#icon-container").css("height", "auto");
-	}		
-	var initialTopSpace = ($("#icon-container").height() - $("#icon-content").height())/2;
-	$("#icon-content").css("padding-top", initialTopSpace);
-	
 	// expansion
 	$(".see-more-btn").click(function() { 
 		$("#hidden-icons").show();
 		$(this).hide();
 
-		if($("#icons").height() > $("#icon-container").height()) { 
-			$("#icon-container").css("height", "auto");
-		}	
+		var newOverflow = $(document.body).height() < $("#icon-content").height() + 50 + 80 + contentTopPadding;
+		if(newOverflow) { 
+			$("#icon-page").css("height", "auto");
+		}
+		
 	});
 });
