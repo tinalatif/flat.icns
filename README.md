@@ -1,7 +1,7 @@
 flat.icns
 =========
 
-A flat icon set for OS X for a more consistent look.
+A flat icon set for OS X, for a more uniform dock. Made by [Tina Latif](http://tinalatif.com).
 
 ## Installation
 
