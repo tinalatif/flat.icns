@@ -3,11 +3,9 @@ $(window).load(function() {
 	// icon overflow
 	var iconOverflow = $(document.body).height() < $("#icon-content").height() + 50 + 80;
 	var contentTopPadding;
-
 	if(!iconOverflow) { 
 		// expand icon-page to fill full screen
-		$("#icon-page").css("height", "calc(100% - 50px)");
-		
+		$("#icon-page").css("height", "calc(100% - 50px)");		
 		// center contents
 		var whiteSpace = $("#icon-page").height() - ($("#icon-content").height());
 		contentTopPadding = parseInt($("#icon-content").css("padding-top"), 10);
@@ -29,16 +27,27 @@ $(window).load(function() {
 	});
 	$(".icon").mouseout(function() { 
 		$("#label").text("");
-	});
+	});	
 
-	// expansion
+	// expand/collapse button
+	var expandMode = true;
+	var oldHeight; // lol hack
 	$(".see-more-btn").click(function() { 
-		$("#hidden-icons").show();
-		$(this).hide();
-
-		var newOverflow = $(document.body).height() < $("#icon-content").height() + 50 + 80 + contentTopPadding;
-		if(newOverflow) { 
-			$("#icon-page").css("height", "auto");
+		if(expandMode) { 	
+			$("#hidden-icons").show();
+			$(this).text('see less');
+			expandMode = false;
+			
+			if($(document.body).height() < $("#icon-content").height() + 50 + 80 + contentTopPadding) { 
+				oldHeight = $("#icon-page").css("height");
+				$("#icon-page").css("height", "auto");
+			}			
+		}
+		else { 
+			$("#hidden-icons").hide();
+			$(this).text('see more');
+			expandMode = true;
+			$("#icon-page").css("height", oldHeight);			
 		}
 		
 	});
