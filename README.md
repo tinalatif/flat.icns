@@ -30,6 +30,6 @@ Use the command:
 
 (revert this by, you guessed it, changing `YES` to `NO`)
 
-#### OS X 10.9 (Mavericks) or above
+#### OS X 10.9 (Mavericks)
 
 The above command won't work. The good news is, the left and right-positioned docks are both 2D, so you can just move the position of your dock. The bad(?) news is that the left and right-side docks are white instead of black, but there are a couple work-arounds for that which I'll leave up to you to figure out.
