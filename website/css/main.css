@@ -184,6 +184,7 @@ header {
 	#label { display: none;}
 	.see-more-btn { font-size: 24px;}
 	nav { font-size: 24px;}
+	#info-content { font-size: 22px; }
 }
 
 @media only screen and (max-width: 640px) { 
