@@ -31,34 +31,34 @@ replace_app_icon() {
   name=$(basename "$icon" .icns)
   app="/Applications/$name.app"
   if [ -d "$app" ]; then
-    echo "  * $name" >&2
+    echo "  * $name"
     replace_icon "$icon" "$app"
   fi
 }
 
-echo >&2
-echo ' Thanks for installing flat.icns!' >&2
+echo
+echo ' Thanks for installing flat.icns!'
 
 # need root
 if [ $EUID -ne 0 ]; then
-  echo >&2
-  echo ' ERROR: script needs root to change app icons.' >&2
-  echo ' FIX: run with sudo or su.' >&2
-  echo >&2
+  echo
+  echo ' ERROR: script needs root to change app icons.'
+  echo ' FIX: run with sudo or su.'
+  echo
   exit 1
 fi
 
-echo >&2
-echo ' Downloading icon files' >&2
+echo
+echo ' Downloading icon files'
 curl -L --progress-bar -o $ZIP $URL
 unzip -qq -o -j $ZIP -d $DIR
 
-echo >&2
-echo ' Replacing app icons' >&2
+echo
+echo ' Replacing app icons'
 for file in $DIR/*.icns; do
   replace_app_icon "$file"
 done
 
-echo >&2
-echo ' All done! Restart your computer.' >&2
-echo >&2
+echo
+echo ' All done! Restart your computer.'
+echo
