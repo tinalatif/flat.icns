@@ -22,7 +22,7 @@ Some programs may require manual installation (for example, if they are not dire
 
 For the best results, I recommend you use a [2D dock instead of a 3D dock](http://hints.macworld.com/images/105dockcomparo.jpg).
 
-#### OS X 10.8 (Mountain Lion) or below
+##### OS X 10.8 (Mountain Lion) or below
 
 Use the command: 
 
@@ -30,6 +30,16 @@ Use the command:
 
 (revert this by, you guessed it, changing `YES` to `NO`)
 
-#### OS X 10.9 (Mavericks)
+##### OS X 10.9 (Mavericks)
 
 The above command won't work. The good news is, the left and right-positioned docks are both 2D, so you can just move the position of your dock. The bad(?) news is that the left and right-side docks are white instead of black, but there are a couple work-arounds for that which I'll leave up to you to figure out.
+
+## Requests
+
+If you want an icon that's not there, the preferred way of requesting is to file an issue for it.
+
+Otherwise, feel free to [tweet me](http://twitter.com/tinalatif).
+
+## Contribute
+
+If you want to add icons, I've provided a template for the size. Use the red as a guideline for centered icons.
