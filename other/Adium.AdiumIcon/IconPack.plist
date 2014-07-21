@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<dict>
+		<key>Title</key>
+		<string>Adium Flat.icns</string>
+	</dict>
+	<key>State</key>
+	<dict>
+		<key>Invisible</key>
+		<dict>
+			<key>Overlay</key>
+			<false/>
+			<key>Animated</key>
+			<false/>
+			<key>Image</key>
+			<string>Invisible.png</string>
+		</dict>
+		<key>InvisibleAlert</key>
+		<dict>
+			<key>Animated</key>
+			<true/>
+			<key>Images</key>
+			<array>
+				<string>InvisibleFlap.png</string>
+				<string>Invisible.png</string>
+			</array>
+			<key>Overlay</key>
+			<false/>
+			<key>Delay</key>
+			<real>0.5</real>
+		</dict>
+		<key>Alert</key>
+		<dict>
+			<key>Animated</key>
+			<true/>
+			<key>Delay</key>
+			<real>0.5</real>
+			<key>Images</key>
+			<array>
+				<string>Flap.png</string>
+				<string>Awake.png</string>
+			</array>
+			<key>Overlay</key>
+			<false/>
+		</dict>
+		<key>ApplicationIcon</key>
+		<dict>
+			<key>Animated</key>
+			<false/>
+			<key>Image</key>
+			<string>ApplicationIcon.png</string>
+			<key>Overlay</key>
+			<false/>
+		</dict>
+		<key>Away</key>
+		<dict>
+			<key>Animated</key>
+			<false/>
+			<key>Image</key>
+			<string>../Shared Images/Away.png</string>
+			<key>Overlay</key>
+			<true/>
+		</dict>
+		<key>Base</key>
+		<dict>
+			<key>Animated</key>
+			<false/>
+			<key>Image</key>
+			<string>Asleep.png</string>
+			<key>Overlay</key>
+			<false/>
+		</dict>
+		<key>Connecting</key>
+		<dict>
+			<key>Animated</key>
+			<true/>
+			<key>Delay</key>
+			<real>0.2</real>
+			<key>Images</key>
+			<array>
+				<string>../Shared Images/Connect1.png</string>
+				<string>../Shared Images/Connect2.png</string>
+				<string>../Shared Images/Connect3.png</string>
+				<string>../Shared Images/Connect4.png</string>
+			</array>
+			<key>Overlay</key>
+			<true/>
+		</dict>
+		<key>Idle</key>
+		<dict>
+			<key>Animated</key>
+			<false/>
+			<key>Image</key>
+			<string>../Shared Images/Idle.png</string>
+			<key>Overlay</key>
+			<true/>
+		</dict>
+		<key>Online</key>
+		<dict>
+			<key>Animated</key>
+			<false/>
+			<key>Image</key>
+			<string>Awake.png</string>
+			<key>Overlay</key>
+			<false/>
+		</dict>
+		<key>Preview</key>
+		<dict>
+			<key>Animated</key>
+			<false/>
+			<key>Image</key>
+			<string>Awake.png</string>
+			<key>Overlay</key>
+			<false/>
+		</dict>
+	</dict>
+</dict>
+</plist>
