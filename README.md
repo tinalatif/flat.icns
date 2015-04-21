@@ -1,5 +1,4 @@
-flat.icns
-=========
+![flat.icns Image](flaticns.png)
 
 A flat icon set for OS X, for a more uniform dock. Made by [Tina Latif](http://tinalatif.com).
 
@@ -18,7 +17,7 @@ Some programs may require manual installation (for example, if they are not dire
 3. Right-click on the program and select 'Get Info'
 4. Drag the .icns file onto the existing icon for the program in the info panel 
 
-To install the Calender app:
+##### To install the Calender app:
 1. Choose which icons you want to use from the flaticns folder and change the names to 'App.icns' and 'App-empty.icns' by right-clicking and selecting 'Get Info'
 2. Go to Applications, right click on the Calendar app, and select "Show Package Contents"
 3. Navigate to Calendar.app/Contents/Resources to find the 'App.icns' and the 'App-empty.icns' (recommended to make a back-up of these!)
