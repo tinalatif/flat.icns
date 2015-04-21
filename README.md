@@ -1,5 +1,4 @@
-flat.icns
-=========
+![flat.icns Image](flaticns.png)
 
 A flat icon set for OS X, for a more uniform dock. Made by [Tina Latif](http://tinalatif.com).
 
