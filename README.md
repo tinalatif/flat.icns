@@ -4,11 +4,32 @@ A flat icon set for OS X, for a more uniform dock. Made by [Tina Latif](http://t
 
 ## Installation
 
+#### Method 1: Icon Manager (Recommended)
+
 There are a few icon managers out there. I use and recommend [LiteIcon](http://www.freemacsoft.net/liteicon).
 
 Just drag and drop the icons onto their corresponding applications, and then log out and back in to refresh the dock.
 
-### Manual installation
+#### Method 2: Automated Script
+
+The Automated Script downloads the lastest flat.icns zip and replaces the icons for you.
+
+1. Open the terminal and cd into the containing folder
+
+	```
+	ex: cd Download/flat.icns-master/
+	```
+  
+2. To run Script, use this command: 
+
+	```
+	sudo ./install.sh
+	```
+   
+Note: The script isnt pefect and dosent have a revert option, use with conscience. 
+</br> This will be updated in near future. 
+
+#### Method 3: Manual installation
 
 Some programs may require manual installation (for example, if they are not directly in the Applications folder). The icns folder contains all the .icns files for this.
 
@@ -33,8 +54,8 @@ For the best results, I recommend you use a [2D dock instead of a 3D dock](http:
 ##### OS X 10.8 (Mountain Lion) or below
 
 Use the command: 
-
-	defaults write com.apple.dock no-glass -boolean YES 
+	
+    defaults write com.apple.dock no-glass -boolean YES 
 
 (revert this by, you guessed it, changing `YES` to `NO`)
 
@@ -45,9 +66,9 @@ The above command won't work. The good news is, the left and right-positioned do
 ## Requests
 
 If you want an icon that's not there, the preferred way of requesting is to file an issue for it.
-
-Otherwise, feel free to [tweet me](http://twitter.com/tinalatif).
+<br/> Otherwise, feel free to [tweet me](http://twitter.com/tinalatif).
 
 ## Contribute
 
-If you want to add icons, I've provided a template for the size. Use the red as a guideline for centered icons.
+If you want to add icons, I've provided a template for the size. 
+</br>Use the red as a guideline for centered icons.

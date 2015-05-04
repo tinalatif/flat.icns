@@ -3,7 +3,7 @@ set -o errexit
 set -o nounset
 
 # constants
-URL='https://github.com/tinalatif/flat.icns/archive/1.0.zip'
+URL='https://github.com/tinalatif/flat.icns/archive/master.zip'
 ZIP='/tmp/tinalatif-zip'
 DIR='/tmp/tinalatif-icns'
 
