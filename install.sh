@@ -1,3 +1,5 @@
+#/bin/sh
+
 # exit on errors
 set -o errexit
 set -o nounset
