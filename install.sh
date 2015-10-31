@@ -1,4 +1,4 @@
-#/bin/sh
+#!/bin/sh
 
 # exit on errors
 set -o errexit
@@ -15,6 +15,7 @@ replace_icon() {
   dest="$2"
   icon=/tmp/$(basename "$file")
   rsrc=/tmp/icon.rsrc
+  dest_icon="$dest/$(printf '%b' 'Icon\r')"
 
   # generate rsrc
   cp "$file" "$icon"
@@ -22,9 +23,9 @@ replace_icon() {
   DeRez -only icns "$icon" > "$rsrc"
 
   # set icon
-  Rez -append $rsrc -o "$dest"$'/Icon\r'
+  Rez -append $rsrc -o "$dest_icon"
   SetFile -a C "$dest"
-  SetFile -a V "$dest"$'/Icon\r'
+  SetFile -a V "$dest_icon"
 }
 
 # replace_app_icon ICNS
@@ -42,7 +43,7 @@ echo
 echo ' Thanks for installing flat.icns!'
 
 # need root
-if [ $EUID -ne 0 ]; then
+if [ "$EUID" -ne 0 ]; then
   echo
   echo ' ERROR: script needs root to change app icons.'
   echo ' FIX: run with sudo or su.'
