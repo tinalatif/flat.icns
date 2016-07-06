@@ -88,6 +88,6 @@ for file in $DIR/*.icns; do
 done
 
 echo
-echo " Thanks for installing flat.icns, we hope your enjoy all your lovely new icons!"
+echo " Thanks for installing flat.icns, we hope you'll enjoy all your lovely new icons!"
 echo " Now that we're all done, you'll need to restart your computer for the changes to take effect."
 echo
