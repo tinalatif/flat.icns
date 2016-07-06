@@ -14,17 +14,11 @@ Just drag and drop the icons onto their corresponding applications, and then log
 
 The Automated Script downloads the lastest flat.icns zip and replaces the icons for you.
 
-1. Open the terminal and cd into the containing folder
+Open the terminal and run this command, to download and execute the script
 
-	```
-	ex: cd Download/flat.icns-master/
-	```
-  
-2. To run Script, use this command: 
-
-	```
-	sudo ./install.sh
-	```
+```
+curl https://raw.githubusercontent.com/tinalatif/flat.icns/master/install.sh | sudo sh
+```
    
 Note: The script isnt pefect and dosent have a revert option, use with conscience. 
 </br> This will be updated in near future. 
