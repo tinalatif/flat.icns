@@ -9,6 +9,7 @@ URL="https://github.com/tinalatif/flat.icns/archive/master.zip"
 ZIP="/tmp/tinalatif-zip"
 DIR="/tmp/tinalatif-icns"
 APPS="/Applications"
+BACKUP_DIR="/icons_backup"
 
 # replace_icon ICNS APP
 replace_icon() {
@@ -43,9 +44,9 @@ replace_app_icon() {
 backup_app_icon() {
   app="$1"
   name=$(basename "$app" .app)
-  icon="/icons_backup/$name.icns"
+  icon="$BACKUP_DIR/$name.icns"
   if [ -d "$app" ]; then
-    cp -f "$app/Contents/Resources/$name.icns" "/icons_backup/"
+    cp -f "$app/Contents/Resources/$name.icns" "//"
     echo "  * $name"
   fi
 }
@@ -73,8 +74,8 @@ unzip -qq -o -j $ZIP -d $DIR
 
 echo
 echo " Step 3 of 4: Backing up original app icons..."
-if ! [ -d "/icons_backup" ]; then
-  mkdir "/icons_backup"
+if ! [ -d "$BACKUP_DIR" ]; then
+  mkdir "$BACKUP_DIR"
 fi
 
 for app in $APPS/*.app; do
